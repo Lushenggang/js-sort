@@ -1,7 +1,8 @@
 function merge(l1, l2) {
   let i1 = 0, i2 = 0, result = []
   while (i1 < l1.length && i2 < l2.length) result.push(l1[i1] < l2[i2] ? l1[i1++] : l2[i2++])
-  result.push(i1 >= l1.length ? l2.slice(i2) : l1.slice(i1))
+  let rest = i1 >= l1.length ? l2.slice(i2) : l1.slice(i1)
+  result.push(...rest)
   return result
 }
 
