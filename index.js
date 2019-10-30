@@ -1,7 +1,8 @@
 
 const FUNC_LIST = {
   bubbleSort: require('./bubble-sort'),
-  quickSort: require('./quick-sort')
+  quickSort: require('./quick-sort'),
+  mergeSort: require('./merge-sort')
 }
 
 function autoTest() {
